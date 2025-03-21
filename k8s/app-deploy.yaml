@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app
+  namespace: web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web-app
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+      - name: web-app
+        image: registry.digitalocean.com/sampleapp/myapp:1.0
+        ports:
+        - containerPort: 3000
+        resources:
+            requests:
+              cpu: "100m"  # Request 0.2 CPU 
+              memory: "256Mi"  # Request 256MB RAM
+            limits:
+              cpu: "300m"  # Max allowed 0.4 CPU 
+              memory: "512Mi"
