@@ -2,7 +2,7 @@
 Simple K8s application setup in DigitalOcean Cluster
 
 ## Pre-requisites
-- DigitalOcean Cluster 2 nodes
+- DigitalOcean Cluster (2 nodes)
 - DigitalOcean Registry
 - Doctl installation [here](https://docs.digitalocean.com/reference/doctl/how-to/install/)
 - Docker app for building and pushing the image
