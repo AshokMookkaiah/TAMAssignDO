@@ -1,4 +1,4 @@
-# Simple Web APP on DOKS
+# Deploying Simple Web APP on DOKS
 Simple K8s application setup in DigitalOcean Cluster
 
 ## Pre-requisites
